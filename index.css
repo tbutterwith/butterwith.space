@@ -1,0 +1,108 @@
+html {
+  font-family: ‘Courier New’, Courier, monospace;
+  color: rgb(70, 70, 70);
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+h1, h2, h2 a {
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.33em;
+}
+
+a, a:visited, a:hover {
+  text-decoration: underline;
+  color: rgb(70, 70, 70);
+}
+
+.page {
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+
+.site-wrapper {
+  max-width: 1000px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#about-me {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-content-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-content {
+  margin-bottom: 5vh; 
+}
+
+#main-content section{
+  margin-top: 8em;
+}
+
+.cursor {
+  animation: flash 2s ease infinite;
+  font-size: 0.8em;
+}
+
+#open-source img {
+  width: 4em;
+}
+
+.sub-section {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.sub-section p {
+  flex: 0 0 80%;
+}
+
+.sub-section__img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.date {
+  padding-top: 16px;
+  color: rgb(200, 200, 200)
+}
+
+.social-logo {
+  padding-top: 16px;
+  padding-right: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+#footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
