@@ -28,11 +28,33 @@ function createNewBlock() {
   block.classList.add('block')
   block.style.backgroundColor = colour.rgb;
 
+  const closeButton = document.createElement('DIV');
+  closeButton.classList.add('close-button');
+  closeButton.style.color = colour.hex;
+  closeButton.innerHTML = 'x'
+  closeButton.style.cursor = 'pointer';
+
+  closeButton.addEventListener('click', event => {
+    const colourBlock = closeButton.parentNode;
+    const row = colourBlock.parentNode;
+    row.removeChild(colourBlock);
+  });
+  
+  block.addEventListener('mouseenter', () => {
+    closeButton.style.color = colour.labelColour;
+  });
+
+  block.addEventListener('mouseleave', () => {
+    closeButton.style.color = colour.hex;
+  });
+
+
   const label = document.createElement('DIV');
   label.classList.add('colour-label');
   label.style.color = colour.labelColour;
   label.innerHTML = colour.hex + '<br/>' + colour.rgb;
 
+  block.appendChild(closeButton);
   block.appendChild(label);
 
   return block;

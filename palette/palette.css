@@ -28,12 +28,8 @@
   min-width: 14em;
 }
 
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
 .colour-label {
@@ -46,6 +42,15 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: larger;
+}
+
+.close-button {
+  width: calc(100% - 1em);
+  text-align: right;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;  
 }
 
 .add-block {
