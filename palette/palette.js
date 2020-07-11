@@ -51,6 +51,17 @@ function createNewBlock() {
       closeButton.style.color = colour.hex;
     });
 
+    block.addEventListener('touchstart', ({ target }) => {
+      if (!target.getAttribute('isTapped') || target.getAttribute('isTapped') == 'false') {
+        target.setAttribute('isTapped', true);
+        closeButton.style.color = colour.labelColour;
+      } else {
+        target.setAttribute('isTapped', false);
+        closeButton.style.color = colour.hex;
+      }
+
+    });
+
     block.appendChild(closeButton);
   }
 

@@ -13,6 +13,7 @@
   width: 100%;
 
   display: flex;
+
 }
 
 .row {
@@ -68,4 +69,19 @@ a, a:visited, a:hover, a:active {
   font-size: 4em;
   font-weight: bold;
   color: rgb(100,100,100);
+}
+
+@media(max-width: 400px) {
+  .row {
+      flex-direction: column;
+  }
+
+  .add-block {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .colour-label {
+    top: 50%;
+  }
 }
