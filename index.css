@@ -1,8 +1,29 @@
 html {
+  --main-text-color:rgb(70, 70, 70);
+  --header-text-color:  rgb(0, 0, 0);
+  --bg-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --main-text-color: #eee;
+    --header-text-color:  #eee;
+    --bg-color: #121212;
+  }
+
+  #github-icon {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+}
+
+
+html {
   font-family: ‘Courier New’, Courier, monospace;
-  color: rgb(70, 70, 70);
+  color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.3em;
+  background-color: var(--bg-color);
 }
 
 h1 {
@@ -11,13 +32,13 @@ h1 {
 }
 
 h1, h2, h2 a {
-  color: rgb(0, 0, 0);
+  color: var(--header-text-color);
   margin-bottom: 0.33em;
 }
 
 a, a:visited, a:hover {
   text-decoration: underline;
-  color: rgb(70, 70, 70);
+  color: var(--main-text-color);
 }
 
 .sans-serif {
