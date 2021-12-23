@@ -1,5 +1,7 @@
 # butterwith.space
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/796f1d96-09f1-40ff-befc-3b175964a900/deploy-status)](https://app.netlify.com/sites/butterwith-space/deploys)
+
 Repository containing the code for https://butterwith.space
 
 ## Running
