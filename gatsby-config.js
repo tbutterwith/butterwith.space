@@ -124,5 +124,6 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    `gatsby-plugin-sass`,
   ].filter(Boolean),
 }
