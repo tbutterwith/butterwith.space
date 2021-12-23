@@ -1,4 +1,5 @@
 require(`dotenv`).config()
+var { createProxyMiddleware } = require("http-proxy-middleware")
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
@@ -12,6 +13,17 @@ module.exports = {
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: ``,
+  },
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      createProxyMiddleware({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
   },
   plugins: [
     {
