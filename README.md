@@ -6,7 +6,7 @@ Repository containing the code for https://butterwith.space
 
 ## Running
 
-This blog is developed using (Gatsby)[https://www.gatsbyjs.com] and uses the (LekoArts/gatsby-starter-minimal-blog)[https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-minimal-blog] theme.
+This blog is developed using [Gatsby](https://www.gatsbyjs.com) and uses the [LekoArts/gatsby-starter-minimal-blog](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-minimal-blog) theme.
 
 ### Commands
 
