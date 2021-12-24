@@ -8,7 +8,7 @@ let tan = 0.41 // Math.tan(Math.PI/8 items in outer circle)
 
 const fetchWord = async () => {
   try {
-    const { data: { word } } = await axios.get('/.netlify/functions/word_wheel.get'); 
+    const { data: { word } } = await axios.get('/.netlify/functions/word_wheel-get'); 
     if (!word){
       return [];
     }
