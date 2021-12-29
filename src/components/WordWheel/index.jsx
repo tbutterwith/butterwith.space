@@ -20,32 +20,59 @@ const fetchWord = async () => {
 }
 
 const shuffleLetters = (word) => {
-  for (let i = word.length - 1; i > 0; i--) {
+  const shuffledWord = [...word];
+  for (let i = shuffledWord.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [word[i], word[j]] = [word[j], word[i]];
+      [shuffledWord[i], shuffledWord[j]] = [shuffledWord[j], shuffledWord[i]];
   }
+  return shuffledWord;
 }
 
 const renderLetters = (word) => (
-  word.map((letter, index) => (<a key={index} style={{'--i': index + 1}}><div>{letter}</div></a>))
-)
+  word.map((letter, index) => (
+    <a key={index} style={{'--i': index + 1}}>
+      <div>{letter}</div>
+    </a>))
+);
+
+const renderClues = (clues) => {
+  return clues.map((letter, id) => (<h2 key={id}>{letter}</h2>));
+}
 
 const WordWheel = () => {
   const [word, setWord] = useState([]);
+  const [shuffledWord, setShuffledWord] = useState([]);
   const [centerLetter, setCenterLetter] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [clues, setClues] = useState(['_', '_', '_', '_', '_', '_', '_', '_', '_']);
   
   useEffect(async () => {
     const word = await fetchWord();
     setIsLoading(false);
+    setWord(word);
     
-    shuffleLetters(word)
+    const shuffledWord = shuffleLetters(word)
     
-    const firstLetter = word.pop();
+    const firstLetter = shuffledWord.pop();
     setCenterLetter(firstLetter);
     
-    setWord(word);
-  }, [])
+    setShuffledWord(shuffledWord);
+  }, []);
+
+  const onHintClick = () => {
+    const randIndex = Math.floor(Math.random() * 9);
+
+    if (clues[randIndex] != '_') {
+      onHintClick();
+      return;
+    }
+
+    const revealedLetter = word[randIndex];
+    const updatedClues = [...clues];
+    updatedClues[randIndex] = revealedLetter;
+
+    setClues(updatedClues);
+  }
 
   const getContent = () => {
     if(isLoading) {
@@ -54,10 +81,20 @@ const WordWheel = () => {
 
     if (word.length > 0) {
       return (
-        <div className='wheel-container' style={{'--m': 8, '--tan': tan}}>
-          <a><div>{centerLetter}</div></a>
-          {renderLetters(word)}
-        </div>
+        <>
+          <div className='wheel-container' style={{'--m': 8, '--tan': tan}}>
+            <a>
+              <div>{centerLetter}</div>
+            </a>
+            {renderLetters(shuffledWord)}
+          </div>
+          <div className="clue-container">
+            {renderClues(clues)}
+          </div>
+          <div className="hint-container">
+            <button onClick={() => onHintClick()}>Hint</button>
+          </div>
+        </>
       )
     }
 
