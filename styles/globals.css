@@ -63,6 +63,10 @@
   @apply bg-slate-100 my-4;
 }
 
+.markdown pre code {
+
+}
+
 @media (prefers-color-scheme: dark) {
   .markdown a:visited {
     @apply text-blue-300;
