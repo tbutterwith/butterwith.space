@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (prefers-color-scheme: dark) {
+    body {
+      @apply bg-slate-900 text-slate-100;
+    }
+  }
+
+  
+}
+
+.markdown h1,
+.markdown h2 {
+  @apply text-xl mt-6 font-bold leading-relaxed;
+}
+
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-lg mt-6 font-bold leading-relaxed;
+}
+
+.markdown a {
+  @apply text-blue-500;
+}
+
+.markdown a:visited {
+  @apply text-blue-800;
+}
+
+.markdown p, 
+.markdown ul, 
+.markdown hr {
+  @apply mt-6 text-lg leading-relaxed;
+}
+
+.markdown ul,
+.markdown ol {
+  @apply my-4 ml-8 leading-relaxed;
+}
+
+.markdown ol {
+  @apply list-decimal;
+}
+
+.markdown ul {
+  @apply list-disc;
+}
+
+.markdown code {
+  @apply text-sm bg-slate-100;
+}
+
+.markdown :not(pre)>code {
+  @apply px-1;
+}
+
+.markdown pre {
+  @apply bg-slate-100 my-4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown a:visited {
+    @apply text-blue-300;
+  }
+
+  .markdown a {
+    @apply text-blue-500;
+  }
+  
+  .markdown pre code, .markdown code {
+    @apply bg-slate-800 text-slate-50;
+  }
+}
