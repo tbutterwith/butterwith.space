@@ -24,7 +24,7 @@
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
     "gray-matter": "^4.0.3",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.7",
     "rehype-document": "^6.1.0",
