@@ -14,14 +14,14 @@
 
 .markdown h1,
 .markdown h2 {
-  @apply text-xl mt-6 font-bold leading-relaxed;
+  @apply text-9xl mt-6 font-bold leading-relaxed;
 }
 
 .markdown h3,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  @apply text-lg mt-6 font-bold leading-relaxed;
+  @apply text-4xl mt-6 font-bold leading-relaxed;
 }
 
 .markdown a {

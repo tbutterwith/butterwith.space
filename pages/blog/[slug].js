@@ -19,7 +19,7 @@ function BlogPostPage({ blog }) {
       </Head>
       <div className="container flex justify-center">
         <div className="max-w-full font-serif leading-relaxed md:max-w-prose">
-          <h1 className="font-serif text-4xl">{blog.title}</h1>
+          <h1 className="font-serif text-9xl">{blog.title}</h1>
           <div className="text-slate-400">{blog.tags.sort().join(", ")}</div>
           <section
             className="markdown"
