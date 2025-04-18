@@ -32,10 +32,10 @@ const About = () => {
       <div className="max-w-prose font-serif leading-relaxed">
         <h2 className="text-2xl">Summary</h2>
         <p className="pt-2">
-          I&apos;m a Senior Group Engineering Manager based in Edinburgh, UK,
-          currently working for VEED.io. I manage teams, coach and develop great
-          software engineering leaders, and build full-stack applications using
-          wide range of technologies including NodeJs, React, Python, Java, and
+          I&apos;m a Director of Engineering based in Worthing, UK, currently
+          working for VEED.io. I manage teams, coach and develop great software
+          engineering leaders, and build full-stack applications using wide
+          range of technologies including NodeJs, React, Python, Java, and
           various cloud technologies.
         </p>
         <p className="pt-2">
@@ -115,7 +115,8 @@ const About = () => {
           <li>Integrated SOX compliant tooling and revenue alerting</li>
           <li>
             Designed and built an event based Accruals service for tracking and
-            managing outstanding payments using Express.js and React with Apache{" "}
+            managing outstanding payments using Express.js and React with
+            Apache{" "}
           </li>
           Kafka event BUS
           <li>

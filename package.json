@@ -30,12 +30,12 @@
     "postcss": "^8.4.21",
     "prettier": "3.5",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "rehype-document": "^6.1.0",
-    "rehype-highlight": "^6.0.0",
-    "rehype-stringify": "^9.0.3",
-    "remark-html": "^15.0.2",
-    "remark-parse": "^10.0.1",
-    "remark-rehype": "^10.1.0",
+    "rehype-document": "7",
+    "rehype-highlight": "7",
+    "rehype-stringify": "10",
+    "remark-html": "16",
+    "remark-parse": "11",
+    "remark-rehype": "11",
     "unified": "11",
     "uuid": "11.1"
   }
