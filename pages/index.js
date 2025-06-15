@@ -13,6 +13,9 @@ function Homepage({ blogs }) {
       <SectionHeading>Apps</SectionHeading>
       <ol>
         <li className="px-5 py-1">
+          <a href="https://dotjournal.app" target="_blank">Dot Journal</a>
+        </li>
+        <li className="px-5 py-1">
           <Link href="/word-wheel">Word Wheel</Link>
         </li>
         <li className="px-5 py-1">
