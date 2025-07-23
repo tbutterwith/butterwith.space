@@ -16,6 +16,9 @@ function Homepage({ blogs }) {
           <a href="https://dotjournal.app" target="_blank">Dot Journal</a>
         </li>
         <li className="px-5 py-1">
+          <a href="https://github.com/tbutterwith/todo-mcp" target="_blank">Todo MCP</a>
+        </li>
+        <li className="px-5 py-1">
           <Link href="/word-wheel">Word Wheel</Link>
         </li>
         <li className="px-5 py-1">
