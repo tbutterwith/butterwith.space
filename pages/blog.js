@@ -6,6 +6,9 @@ import BlogsList from "../components/Blog/BlogsList";
 const BlogPage = ({ blogs }) => {
   const tagsDict = {};
 
+  const thoughts = blogs.filter((blog) => blog.tags.includes("thoughts"));
+  const articles = blogs.filter((blog) => !blog.tags.includes("thoughts"));
+
   blogs.forEach((blog) => {
     blog.tags.forEach((tag) => {
       if (tagsDict[tag] != undefined) {
@@ -33,7 +36,9 @@ const BlogPage = ({ blogs }) => {
       <div className="flex flex-row flex-wrap pt-4">
         <div className="basis-3/4">
           <h2 className="font-serif text-xl">Articles</h2>
-          <BlogsList blogs={blogs} className="py-4" />
+          <BlogsList blogs={articles} className="py-4" />
+          <h2 className="font-serif text-xl">Thoughts</h2>
+          <BlogsList blogs={thoughts} className="py-4" />
         </div>
         <div className="md:basis-1/4">
           <h2 className="py-4 font-serif text-xl">Tags</h2>
