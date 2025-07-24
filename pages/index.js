@@ -6,7 +6,7 @@ import Header from "../components/Homepage/blog-header";
 import SectionHeading from "../components/Homepage/section-heading";
 import BlogsList from "../components/Blog/BlogsList";
 
-function Homepage({ blogs }) {
+function Homepage({ blogs, thoughts }) {
   return (
     <>
       <Header />
@@ -48,6 +48,8 @@ function Homepage({ blogs }) {
           </a>
         </li>
       </ol>
+      <SectionHeading>Thoughts</SectionHeading>
+      <BlogsList blogs={thoughts} />
       <SectionHeading>Writing</SectionHeading>
       <BlogsList blogs={blogs} />
     </>
@@ -59,9 +61,12 @@ export default Homepage;
 // This function gets called at build time on server-side.
 export async function getStaticProps() {
   const blogs = getAllBlogs();
-  const sortedBlogs = sortBlogs(blogs);
+  const thoughts = blogs.filter((blog) => blog.tags.includes("thoughts"));
+  const articles = blogs.filter((blog) => !blog.tags.includes("thoughts"));
+  const sortedBlogs = sortBlogs(articles);
+  const sortedThoughts = sortBlogs(thoughts);
 
   return {
-    props: { blogs: sortedBlogs },
+    props: { blogs: sortedBlogs, thoughts: sortedThoughts },
   };
 }
