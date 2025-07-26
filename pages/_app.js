@@ -50,7 +50,7 @@ export default function AppOverride({ Component, pageProps }) {
           href="/assets/icons/favicon-16x16.png"
         />
       </Head>
-      <div className="px-10 py-10">
+      <div className="w-full px-6 py-6 sm:px-10 sm:py-10">
         <HeaderLinks />
         <Component {...pageProps} />
       </div>

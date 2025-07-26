@@ -18,8 +18,8 @@ function BlogPostPage({ blog }) {
         <title>{blog.title} | Tom Butterwith - butterwith.space</title>
       </Head>
       <div className="container flex justify-center">
-        <div className="max-w-full font-serif leading-relaxed md:max-w-prose">
-          <h1 className="font-serif text-9xl">{blog.title}</h1>
+        <div className="max-w-full font-serif leading-relaxed md:max-w-prose" id="blog-post">
+          <h1 className="font-serif text-7xl md:text-9xl pb-6">{blog.title}</h1>
           <div className="text-slate-400">{blog.tags.sort().join(", ")}</div>
           <section
             className="markdown"
