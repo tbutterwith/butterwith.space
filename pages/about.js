@@ -1,9 +1,15 @@
 import React from "react";
 const jobs = [
   {
-    title: "Senior Group Engineer Manager",
+    title: "Senior Director of Engineering",
     company: "VEED.io",
-    date: "Feb 2023 - Present",
+    date: "May 2025 - present",
+    description: [],
+  },
+  {
+    title: "Director of Engineering",
+    company: "VEED.io",
+    date: "Feb 2023 - May 2025",
     description: [],
   },
   {
@@ -32,7 +38,7 @@ const About = () => {
       <div className="max-w-prose font-serif leading-relaxed">
         <h2 className="text-2xl">Summary</h2>
         <p className="pt-2">
-          I&apos;m a Director of Engineering based in Worthing, UK, currently
+          I&apos;m a Senior Director of Engineering based in Worthing, UK, currently
           working for VEED.io. I manage teams, coach and develop great software
           engineering leaders, and build full-stack applications using wide
           range of technologies including NodeJs, React, Python, Java, and
