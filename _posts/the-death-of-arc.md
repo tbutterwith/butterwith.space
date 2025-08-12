@@ -1,6 +1,6 @@
 ---
 title: "The Death of Arc"
-date: "25-07"
+date: "2025-07-25"
 slug: "the-death-of-arc"
 tags:
   - thoughts

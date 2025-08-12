@@ -1,6 +1,6 @@
 ---
 title: "All Knowing AI"
-date: "25-07-24"
+date: "2025-07-24"
 slug: "all-knowing-ai"
 tags:
   - thoughts

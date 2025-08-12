@@ -12,31 +12,31 @@ function Homepage({ blogs, thoughts }) {
       <Header />
       <SectionHeading>Apps</SectionHeading>
       <ol>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a href="https://dotjournal.app" target="_blank">Dot Journal</a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a href="https://github.com/tbutterwith/todo-mcp" target="_blank">Todo MCP</a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a href="https://addons.mozilla.org/en-GB/firefox/addon/better-linkedin/" target="_blank">
           Better LinkedIn: a Firefox extension to improve LinkedIn
           </a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <Link href="/word-wheel">Word Wheel</Link>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a href="https://github.com/tbutterwith/Tomodoro" target="_blank">
             Tomodoro: a Pomodoro timer for mac
           </a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a href="https://github.com/tbutterwith/bosun-vscode" target="_blank">
             Bosun VS Code Plugin
           </a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a
             href="https://github.com/tbutterwith/pyjamas-theme"
             target="_blank"
@@ -44,7 +44,7 @@ function Homepage({ blogs, thoughts }) {
             Pyjamas VS Code Theme
           </a>
         </li>
-        <li className="px-5 py-1">
+        <li className="py-1">
           <a
             href="https://github.com/tbutterwith/react-components"
             target="_blank"
