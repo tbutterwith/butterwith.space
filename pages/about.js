@@ -45,8 +45,9 @@ const About = () => {
           various cloud technologies.
         </p>
         <p className="pt-2">
-          Outside of work I spend my time teaching with Code First:Girls and
-          mentoring at codebar.io.
+            At the moment, I'm working with teams spanning Marketing, Product, core
+            infrastructure, and AI research to build a world-class video generation
+            platform. 
         </p>
         <h2 className="pt-6 text-2xl">Things I&apos;ve Worked On</h2>
         <h3 className="semi pt-2 text-lg">Skyscanner Homepage Consolidation</h3>

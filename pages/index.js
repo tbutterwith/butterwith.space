@@ -19,6 +19,11 @@ function Homepage({ blogs, thoughts }) {
           <a href="https://github.com/tbutterwith/todo-mcp" target="_blank">Todo MCP</a>
         </li>
         <li className="px-5 py-1">
+          <a href="https://addons.mozilla.org/en-GB/firefox/addon/better-linkedin/" target="_blank">
+          Better LinkedIn: a Firefox extension to improve LinkedIn
+          </a>
+        </li>
+        <li className="px-5 py-1">
           <Link href="/word-wheel">Word Wheel</Link>
         </li>
         <li className="px-5 py-1">
