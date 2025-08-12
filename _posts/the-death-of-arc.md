@@ -3,8 +3,8 @@ title: "The Death of Arc"
 date: "2025-07-25"
 slug: "the-death-of-arc"
 tags:
-  - thoughts
-  - tools
+  - Thoughts
+  - Tools
 ---
 A colleague asked me today which browser I was using to debug things. I said I was using Arc, which I had been for the last year or so. I've been a little disappointed to hear that the team behind Arc were moving on to something different and were leaving this potentially world-class browser in the dust. They mentioned it would get security updates — it has, but that's all. I miss the days when every Thursday or Friday there would be a What's New notification, which came with a bunch of new features adding interesting and novel tools that made browsing the web and collecting your thoughts easier.
 
