@@ -6,8 +6,8 @@ import BlogsList from "../components/Blog/BlogsList";
 const BlogPage = ({ blogs }) => {
   const tagsDict = {};
 
-  const thoughts = blogs.filter((blog) => blog.tags.includes("thoughts"));
-  const articles = blogs.filter((blog) => !blog.tags.includes("thoughts"));
+  const thoughts = blogs.filter((blog) => blog.tags.includes("Thoughts"));
+  const articles = blogs.filter((blog) => !blog.tags.includes("Thoughts"));
 
   blogs.forEach((blog) => {
     blog.tags.forEach((tag) => {

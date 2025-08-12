@@ -66,8 +66,8 @@ export default Homepage;
 // This function gets called at build time on server-side.
 export async function getStaticProps() {
   const blogs = getAllBlogs();
-  const thoughts = blogs.filter((blog) => blog.tags.includes("thoughts"));
-  const articles = blogs.filter((blog) => !blog.tags.includes("thoughts"));
+  const thoughts = blogs.filter((blog) => blog.tags.includes("Thoughts"));
+  const articles = blogs.filter((blog) => !blog.tags.includes("Thoughts"));
   const sortedBlogs = sortBlogs(articles);
   const sortedThoughts = sortBlogs(thoughts);
 
