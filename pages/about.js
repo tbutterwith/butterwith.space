@@ -45,7 +45,7 @@ const About = () => {
           various cloud technologies.
         </p>
         <p className="pt-2">
-            At the moment, I'm working with teams spanning Marketing, Product, core
+            At the moment, I&apos;m working with teams spanning Marketing, Product, core
             infrastructure, and AI research to build a world-class video generation
             platform. 
         </p>
