@@ -38,5 +38,6 @@
     "remark-rehype": "11",
     "unified": "11",
     "uuid": "11.1"
-  }
+  },
+  "packageManager": "pnpm@9.15.4"
 }

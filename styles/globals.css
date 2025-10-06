@@ -26,8 +26,15 @@
       @apply bg-slate-900 text-slate-100;
     }
   }
+}
 
+#photos-post img {
+  @apply my-6 rounded-lg;
+  @apply max-w-[600px];
   
+  @media (max-width: 640px) {
+    @apply w-full;
+  }
 }
 
 .markdown h1,
