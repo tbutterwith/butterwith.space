@@ -15,20 +15,20 @@
     "date-fns": "4.1",
     "highlight.js": "^11.7.0",
     "next": "15.3.1",
-    "posthog-js": "^1.236.2",
+    "posthog-js": "^1.281.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.16",
     "autoprefixer": "^10.4.14",
-    "eslint": "9.24",
+    "eslint": "~9.24.0",
     "eslint-config-next": "15.3.1",
     "eslint-config-prettier": "10.1",
     "gray-matter": "^4.0.3",
     "postcss": "^8.4.21",
-    "prettier": "3.5",
+    "prettier": "~3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rehype-document": "7",
     "rehype-highlight": "7",
@@ -37,7 +37,7 @@
     "remark-parse": "11",
     "remark-rehype": "11",
     "unified": "11",
-    "uuid": "11.1"
+    "uuid": "~11.1.0"
   },
   "packageManager": "pnpm@9.15.4"
 }
