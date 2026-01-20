@@ -4,7 +4,7 @@ date: "2022-01-09"
 slug: "your-voice-matters"
 description: How best to use your voice to influence a team.
 tags:
-  - Team Dynamics
+  - Engineering Leadership
 ---
 I’ve been leading teams for a couple of years now and I often receive feedback from my direct reports that they’re either unsure on how best to contribute to team discussions, or they’re newer senior engineers and don’t understand the weight their voice carries in discussions. What you’ll find below are some examples of how you can use your voice to benefit the team regardless of your role, and a couple of pitfalls to watch out for as you become more senior.
 

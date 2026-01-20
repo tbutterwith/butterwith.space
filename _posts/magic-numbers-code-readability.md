@@ -4,8 +4,8 @@ date: "2021-03-03"
 slug: "magic-numbers-code-readability"
 tags:
   - Code Quality
-  - Javascript
-  - Refactoring
+  - JavaScript
+description: "Improve code readability by replacing 'magic numbers' with named constants. A simple refactoring technique for self-documenting code."
 ---
 ### What are magic numbers?
 

@@ -4,8 +4,8 @@ date: "2023-05-05"
 slug: "rituals-of-deep-work"
 canonicalUrl: "https://butterwith.space"
 tags:
-  - Focus
-  - Deep Work
+  - Productivity
+description: "Techniques for achieving deep work in a distracted world: finding your peak hours, establishing rituals, and minimizing interruptions."
 ---
 ![A lighthouse overlooking the sea](/assets/blog/rituals-of-deep-work/hero.jpg)
 

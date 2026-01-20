@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Tom Butterwith</title>
+    <link>https://butterwith.space</link>
+    <description>Thoughts on software engineering, management, and life.</description>
+    <language>en</language>
+    
+    <item>
+      <title>The Death of Arc</title>
+      <link>https://butterwith.space/blog/the-death-of-arc</link>
+      <guid>https://butterwith.space/blog/the-death-of-arc</guid>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 GMT</pubDate>
+      <description>Reflections on switching from the Arc browser back to Firefox: speed improvements, vertical tabs, and the trade-offs in features and workflow.</description>
+    </item>
+    <item>
+      <title>All Knowing AI</title>
+      <link>https://butterwith.space/blog/all-knowing-ai</link>
+      <guid>https://butterwith.space/blog/all-knowing-ai</guid>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 GMT</pubDate>
+      <description>The hidden costs of AI tools: privacy concerns, trust issues, and the potential for data breaches in an era of hasty software development.</description>
+    </item>
+    <item>
+      <title>Becoming a Highly Effective Engineer</title>
+      <link>https://butterwith.space/blog/becoming-a-highly-effective-engineer</link>
+      <guid>https://butterwith.space/blog/becoming-a-highly-effective-engineer</guid>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 GMT</pubDate>
+      <description>Beyond coding: key traits of highly effective engineers, including finishing over starting, fostering team growth, and mastering communication.</description>
+    </item>
+    <item>
+      <title>The Multi-Level Todo List</title>
+      <link>https://butterwith.space/blog/the-multi-level-todo-list</link>
+      <guid>https://butterwith.space/blog/the-multi-level-todo-list</guid>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 GMT</pubDate>
+      <description>A multi-level approach to task management for leaders: implementing weekly goals, an inbox for triage, and a prioritized backlog to stay organized.</description>
+    </item>
+    <item>
+      <title>Building Systems at Scale: how Skyscanner approaches engineering design reviews</title>
+      <link>https://butterwith.space/blog/building-systems-at-scale</link>
+      <guid>https://butterwith.space/blog/building-systems-at-scale</guid>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+      <description>How Skyscanner manages engineering design reviews at scale to align stakeholders, share context, and build better distributed systems.</description>
+    </item>
+    <item>
+      <title>To Do More, Do Less</title>
+      <link>https://butterwith.space/blog/to-do-more-do-less</link>
+      <guid>https://butterwith.space/blog/to-do-more-do-less</guid>
+      <pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
+      <description>Strategies for productivity in a new role: prioritizing tasks, taking breaks, limiting work in progress, and embracing asynchronous communication.</description>
+    </item>
+    <item>
+      <title>The Rituals of Deep Work</title>
+      <link>https://butterwith.space/blog/rituals-of-deep-work</link>
+      <guid>https://butterwith.space/blog/rituals-of-deep-work</guid>
+      <pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
+      <description>Techniques for achieving deep work in a distracted world: finding your peak hours, establishing rituals, and minimizing interruptions.</description>
+    </item>
+    <item>
+      <title>I Got Promoted, Now What?</title>
+      <link>https://butterwith.space/blog/i-got-promoted-now-what</link>
+      <guid>https://butterwith.space/blog/i-got-promoted-now-what</guid>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 GMT</pubDate>
+      <description>Navigating the post-promotion landscape: finding a new purpose, mentoring others, and considering the long-term career marathon.</description>
+    </item>
+    <item>
+      <title>Nailing Your First Technical Interview</title>
+      <link>https://butterwith.space/blog/nailing-your-first-technical-interview</link>
+      <guid>https://butterwith.space/blog/nailing-your-first-technical-interview</guid>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate>
+      <description>Information and research topics to help you smash your first technical interview and land your first job.</description>
+    </item>
+    <item>
+      <title>Your Voice Matters</title>
+      <link>https://butterwith.space/blog/your-voice-matters</link>
+      <guid>https://butterwith.space/blog/your-voice-matters</guid>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
+      <description>How best to use your voice to influence a team.</description>
+    </item>
+    <item>
+      <title>Thoughts on Boring Software</title>
+      <link>https://butterwith.space/blog/thoughts-on-boring-software</link>
+      <guid>https://butterwith.space/blog/thoughts-on-boring-software</guid>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
+      <description>Boring software is often the most stable, reliable, and innovative software. Here&apos;s a few reasons why.</description>
+    </item>
+    <item>
+      <title>Refactor your if statements for improved readability</title>
+      <link>https://butterwith.space/blog/refactor-if-statements-code-readability</link>
+      <guid>https://butterwith.space/blog/refactor-if-statements-code-readability</guid>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 GMT</pubDate>
+      <description>Refactor complex if-statements into named functions to improve code readability, maintainability, and intent.</description>
+    </item>
+    <item>
+      <title>Avoid Magic Numbers to Increase Code Readability</title>
+      <link>https://butterwith.space/blog/magic-numbers-code-readability</link>
+      <guid>https://butterwith.space/blog/magic-numbers-code-readability</guid>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 GMT</pubDate>
+      <description>Improve code readability by replacing &apos;magic numbers&apos; with named constants. A simple refactoring technique for self-documenting code.</description>
+    </item>
+    <item>
+      <title>Dependency Injection in Java with Guice</title>
+      <link>https://butterwith.space/blog/dependency-injection-with-guice</link>
+      <guid>https://butterwith.space/blog/dependency-injection-with-guice</guid>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 GMT</pubDate>
+      <description>A comprehensive guide to Dependency Injection in Java using Guice, covering constructor injection, providers, and testing strategies.</description>
+    </item>
+    <item>
+      <title>Jupyter Notebooks for Software Developers</title>
+      <link>https://butterwith.space/blog/jupyter-notebooks-for-software-developers</link>
+      <guid>https://butterwith.space/blog/jupyter-notebooks-for-software-developers</guid>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 GMT</pubDate>
+      <description>Why software developers should use Jupyter Notebooks for rapid prototyping, data visualization, and repeatable ad hoc analysis.</description>
+    </item>
+  </channel>
+</rss>

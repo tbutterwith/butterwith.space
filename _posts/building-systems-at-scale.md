@@ -3,8 +3,8 @@ title: "Building Systems at Scale: how Skyscanner approaches engineering design 
 date: "2023-06-01"
 slug: "building-systems-at-scale"
 tags:
-  - Software Architecture
   - System Design
+description: "How Skyscanner manages engineering design reviews at scale to align stakeholders, share context, and build better distributed systems."
 ---
 
 _[Originally published on the Skyscanner Engineering Medium Blog - 31/10/2022](https://medium.com/@SkyscannerEng/building-systems-at-scale-how-skyscanner-approaches-engineering-design-reviews-78067635f6b8)_

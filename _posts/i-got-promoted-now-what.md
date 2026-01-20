@@ -4,7 +4,8 @@ date: "2022-10-12"
 slug: "i-got-promoted-now-what"
 canonicalUrl: "https://butterwith.space"
 tags:
-  - Career Development
+  - Career
+description: "Navigating the post-promotion landscape: finding a new purpose, mentoring others, and considering the long-term career marathon."
 ---
 
 

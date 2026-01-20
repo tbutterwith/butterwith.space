@@ -4,8 +4,8 @@ date: "2019-07-09"
 slug: "jupyter-notebooks-for-software-developers"
 tags:
   - Python
-  - Jupyter
-  - Data Science
+  - Tools
+description: "Why software developers should use Jupyter Notebooks for rapid prototyping, data visualization, and repeatable ad hoc analysis."
 ---
 
 Jupyter Notebook is an interactive web application that interfaces with the iPython repl, allowing you to run structured but iterative Python scripts. It is the de facto choice for data scientists to rapidly prototype pipelines, visualise data, or perform ad hoc analysis.

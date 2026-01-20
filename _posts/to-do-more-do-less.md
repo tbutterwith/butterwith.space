@@ -3,8 +3,8 @@ title: "To Do More, Do Less"
 date: "2023-05-23"
 slug: "to-do-more-do-less"
 tags:
-  - Deep Work
-  - Focus
+  - Productivity
+description: "Strategies for productivity in a new role: prioritizing tasks, taking breaks, limiting work in progress, and embracing asynchronous communication."
 ---
 Starting a new job has given me space to reflect on how I’m spending my time and to be more deliberate with making time to think. In my last role, I spent on average 5+ hours a day in meetings, or preparing for meetings, and used the small gaps in between to get things done. I’d spend a lot of time in these meetings building a to-do list without ever having the time to work through it, and worse, if a direct report had something on their mind that required my attention, they’d need to wait until I’d finished the run of meetings I was in.
 

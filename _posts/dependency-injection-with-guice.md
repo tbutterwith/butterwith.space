@@ -6,6 +6,7 @@ tags:
   - Java
   - Guice
   - Dependency Injection
+description: "A comprehensive guide to Dependency Injection in Java using Guice, covering constructor injection, providers, and testing strategies."
 ---
 
 This post is designed as an overview and reference guide to the different methods of using dependency injection in Java. For in-depth documentation and the background context around the Guice library see the [official Guice documentation](https://github.com/google/guice/wiki).

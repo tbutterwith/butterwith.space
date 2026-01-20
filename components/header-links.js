@@ -7,6 +7,9 @@ const HeaderLinks = () => (
     <div className="inline-flex justify-end space-x-5">
       <Link href={"/about"}>About</Link>
       <Link href={"/blog"}>Blog</Link>
+      <Link href="/rss.xml" target="_blank">
+        RSS
+      </Link>
       <a href="https://www.linkedin.com/in/tbutterwith/" target="_blank">
         LinkedIn
       </a>

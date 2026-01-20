@@ -12,14 +12,42 @@ import matter from "gray-matter";
 import "highlight.js/styles/github.css";
 
 function BlogPostPage({ blog }) {
+  const ogImage = blog.image
+    ? `https://butterwith.space${blog.image}`
+    : "https://butterwith.space/assets/icons/android-chrome-512x512.png";
+
   return (
     <>
       <Head>
         <title>{blog.title} | Tom Butterwith - butterwith.space</title>
+        <meta name="description" content={blog.description} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={`https://butterwith.space/blog/${blog.slug}`}
+        />
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:image" content={ogImage} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content={`https://butterwith.space/blog/${blog.slug}`}
+        />
+        <meta property="twitter:title" content={blog.title} />
+        <meta property="twitter:description" content={blog.description} />
+        <meta property="twitter:image" content={ogImage} />
       </Head>
       <div className="container flex justify-center">
-        <div className="max-w-full font-serif leading-relaxed md:max-w-prose" id="blog-post">
-          <h1 className="font-serif text-7xl md:text-9xl pb-6">{blog.title}</h1>
+        <div
+          className="max-w-full font-serif leading-relaxed md:max-w-prose"
+          id="blog-post"
+        >
+          <h1 className="pb-6 font-serif text-7xl md:text-9xl">{blog.title}</h1>
           <div className="text-slate-400">{blog.tags.sort().join(", ")}</div>
           <section
             className="markdown"
@@ -44,6 +72,15 @@ export async function getStaticProps(context) {
 
   const { data, content } = matter(rawContent);
 
+  // 1. Image fallback if missing in frontmatter
+  let image = data.image;
+  if (!image) {
+    const imageMatch = content.match(/!\[.*?\]\((.*?)\)/);
+    if (imageMatch) {
+      image = imageMatch[1];
+    }
+  }
+
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
@@ -56,6 +93,8 @@ export async function getStaticProps(context) {
       blog: {
         ...data,
         content: result.toString(),
+        description: data.description || "",
+        image: image || null,
       },
     },
   };

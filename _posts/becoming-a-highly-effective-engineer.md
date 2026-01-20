@@ -3,7 +3,8 @@ title: "Becoming a Highly Effective Engineer"
 date: "2024-09-23"
 slug: "becoming-a-highly-effective-engineer"
 tags:
-  - Career Development
+  - Career
+description: "Beyond coding: key traits of highly effective engineers, including finishing over starting, fostering team growth, and mastering communication."
 ---
 
 Senior engineers often ask me, 'What do I need to do to get promoted?’ While technical skills are crucial, the most effective engineers possess qualities that go beyond writing code. Here are a few traits that I feel highly effective engineers embody: finishing over starting, fostering growth in others, and mastering communication.

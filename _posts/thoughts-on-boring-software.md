@@ -2,10 +2,10 @@
 title: "Thoughts on Boring Software"
 date: "2021-12-30"
 slug: "thoughts-on-boring-software"
-description: Boring software is often the most stable, reliable, and innovative software. Here's a few reasons why.
 tags:
-  - General Software Development
-  - Software Architecture
+  - Opinion
+  - System Design
+description: "Boring software is often the most stable, reliable, and innovative software. Here's a few reasons why."
 ---
 
 ![A bonsai tree in a pond](/assets/blog/thoughts-on-boring-software/hero.jpg)

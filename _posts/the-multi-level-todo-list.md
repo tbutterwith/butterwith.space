@@ -3,7 +3,8 @@ title: "The Multi-Level Todo List"
 date: "2024-01-11"
 slug: "the-multi-level-todo-list"
 tags:
-  - Time Management
+  - Productivity
+description: "A multi-level approach to task management for leaders: implementing weekly goals, an inbox for triage, and a prioritized backlog to stay organized."
 ---
 
 Since becoming a “lead of leads” I’ve found that a simple todo list of tasks no longer fits my needs. Given I spend most of my energy delegating tasks and following up on their progress later, I had tasks on my todo list that would be on there for weeks, sometimes months as they progressed. I also found that my attention was being pulled in a number of directions at once and I struggled to identify which tasks were important and how I should spend my time.

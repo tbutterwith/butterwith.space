@@ -4,8 +4,8 @@ date: "2021-03-04"
 slug: "refactor-if-statements-code-readability"
 tags:
   - Code Quality
-  - Javascript
-  - Refactoring
+  - JavaScript
+description: "Refactor complex if-statements into named functions to improve code readability, maintainability, and intent."
 ---
 
 As I write more software and mature as an engineer, I've begun to understand that *less* code isn't always *better* code. Although the code we write is for machines to understand, it's often compiled and optimised for them before it's run. It's much more valuable to write code that's easier for people to understand - it leads to faster code reviews, less confusion, and safer code as people can easily see the intentions behind your code as well as what it does.

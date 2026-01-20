@@ -4,8 +4,7 @@ date: "2022-02-15"
 slug: "nailing-your-first-technical-interview"
 description: Information and research topics to help you smash your first technical interview and land your first job.
 tags:
-  - Interviewing
-  - Career Development
+  - Career
 ---
 The hunt for your first job can be a stressful time in your life. You’ve invested a huge amount of time and energy into learning the skills you think you need to start your journey in the world of professional software development, you’ve made some fantastic projects along the way, but who knows what those pesky interviewers are going to ask you in a “technical interview”.
 
