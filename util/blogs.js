@@ -45,5 +45,7 @@ const getAllTags = () => {
   return [...tags];
 };
 
+const blogs = { getAllBlogs, sortBlogs, getAllTags };
+
 export { getAllBlogs, sortBlogs, getAllTags };
-export default { getAllBlogs, sortBlogs, getAllTags };
+export default blogs;
