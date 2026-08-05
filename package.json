@@ -7,27 +7,27 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "lint": "next lint",
+    "lint": "eslint .",
     "build": "node scripts/generate-sitemap.js && next build",
     "start": "next start"
   },
   "dependencies": {
     "date-fns": "4.1",
     "highlight.js": "^11.7.0",
-    "next": "15.5.7",
-    "posthog-js": "^1.331.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "16.3.0",
+    "posthog-js": "^1.412.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.16",
     "autoprefixer": "^10.4.14",
-    "eslint": "~9.24.0",
-    "eslint-config-next": "15.3.1",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.0",
     "eslint-config-prettier": "10.1",
     "gray-matter": "^4.0.3",
-    "postcss": "^8.4.21",
+    "postcss": "^8.5.25",
     "prettier": "~3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rehype-document": "7",
@@ -37,7 +37,7 @@
     "remark-parse": "11",
     "remark-rehype": "11",
     "unified": "11",
-    "uuid": "~11.1.0"
+    "uuid": "~11.1.1"
   },
   "packageManager": "pnpm@9.15.4"
 }

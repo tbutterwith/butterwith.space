@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { format } from "date-fns";
 
 import words from "./words";
@@ -8,6 +8,22 @@ import styles from "./WordWheel.module.css";
 let tan = 0.41; // Math.tan(Math.PI/8 items in outer circle)
 
 const fetchWord = () => {};
+
+const getTodaysGame = () => {
+  const today = format(new Date(), "yyyy-MM-dd");
+  const word = words[today] || "";
+
+  if (!word) {
+    return { word, shuffledWord: [], centerLetter: "a" };
+  }
+
+  const shuffledWord = shuffleLetters(word);
+  const centerLetter = shuffledWord.pop();
+
+  return { word, shuffledWord, centerLetter };
+};
+
+const getRandomHintIndex = () => Math.floor(Math.random() * 9);
 
 const shuffleLetters = (word) => {
   const shuffledWord = [...word];
@@ -38,9 +54,7 @@ const renderClues = (clues) => {
 };
 
 const WordWheel = () => {
-  const [word, setWord] = useState([]);
-  const [shuffledWord, setShuffledWord] = useState([]);
-  const [centerLetter, setCenterLetter] = useState("a");
+  const [{ word, shuffledWord, centerLetter }] = useState(getTodaysGame);
   const [clues, setClues] = useState([
     "_",
     "_",
@@ -53,21 +67,8 @@ const WordWheel = () => {
     "_",
   ]);
 
-  useEffect(() => {
-    const today = format(new Date(), "yyyy-MM-dd");
-    const word = words[today];
-    setWord(word);
-
-    const shuffledWord = shuffleLetters(word);
-
-    const firstLetter = shuffledWord.pop();
-    setCenterLetter(firstLetter);
-
-    setShuffledWord(shuffledWord);
-  }, []);
-
   const onHintClick = () => {
-    const randIndex = Math.floor(Math.random() * 9);
+    const randIndex = getRandomHintIndex();
 
     if (clues[randIndex] != "_") {
       onHintClick();

@@ -5,5 +5,7 @@ const slugToTag = (slug) =>
     .replace("-", " ")
     .replaceAll(/\b([a-z])/g, (match) => match.toUpperCase());
 
+const tags = { tagToSlug, slugToTag };
+
 export { tagToSlug, slugToTag };
-export default { tagToSlug, slugToTag };
+export default tags;
