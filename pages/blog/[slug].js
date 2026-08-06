@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head";
+import Seo, { siteUrl } from "../../components/Seo";
 
 const fs = require("fs");
 import { unified } from "unified";
@@ -13,35 +13,43 @@ import "highlight.js/styles/github.css";
 
 function BlogPostPage({ blog }) {
   const ogImage = blog.image
-    ? `https://butterwith.space${blog.image}`
-    : "https://butterwith.space/assets/icons/android-chrome-512x512.png";
+    ? `${siteUrl}${blog.image}`
+    : null;
+  const canonicalUrl = `${siteUrl}/blog/${blog.slug}`;
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: blog.title,
+    description: blog.description,
+    datePublished: blog.date,
+    dateModified: blog.date,
+    author: {
+      "@type": "Person",
+      name: "Tom Butterwith",
+      url: `${siteUrl}/about`,
+      sameAs: ["https://www.linkedin.com/in/tbutterwith/"],
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    url: canonicalUrl,
+    ...(ogImage ? { image: ogImage } : {}),
+    inLanguage: "en-GB",
+  };
 
   return (
     <>
-      <Head>
-        <title>{blog.title} | Tom Butterwith - butterwith.space</title>
-        <meta name="description" content={blog.description} />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:url"
-          content={`https://butterwith.space/blog/${blog.slug}`}
-        />
-        <meta property="og:title" content={blog.title} />
-        <meta property="og:description" content={blog.description} />
-        <meta property="og:image" content={ogImage} />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content={`https://butterwith.space/blog/${blog.slug}`}
-        />
-        <meta property="twitter:title" content={blog.title} />
-        <meta property="twitter:description" content={blog.description} />
-        <meta property="twitter:image" content={ogImage} />
-      </Head>
+      <Seo
+        title={`${blog.title} | Tom Butterwith - butterwith.space`}
+        description={blog.description}
+        canonicalPath={`/blog/${blog.slug}`}
+        type="article"
+        image={ogImage}
+        publishedTime={blog.date}
+        tags={blog.tags}
+        jsonLd={articleJsonLd}
+      />
       <div className="container flex justify-center">
         <div
           className="max-w-full font-serif leading-relaxed md:max-w-prose"

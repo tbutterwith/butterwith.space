@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 const jobs = [
   {
     title: "Senior Director of Engineering",
@@ -34,9 +35,16 @@ const jobs = [
 
 const About = () => {
   return (
-    <div className="container flex justify-center">
-      <div className="max-w-prose font-serif leading-relaxed">
-        <h2 className="text-2xl">Summary</h2>
+    <>
+      <Seo
+        title="About Tom Butterwith | Senior Director of Engineering"
+        description="Learn about Tom Butterwith's experience leading engineering teams, building software systems, and developing engineering leaders."
+        canonicalPath="/about"
+      />
+      <div className="container flex justify-center">
+        <div className="max-w-prose font-serif leading-relaxed">
+          <h1 className="sr-only">About Tom Butterwith</h1>
+          <h2 className="text-2xl">Summary</h2>
         <p className="pt-2">
           I&apos;m a Senior Director of Engineering based in Worthing, UK, currently
           working for VEED.io. I manage teams, coach and develop great software
@@ -144,8 +152,9 @@ const About = () => {
             ))}
           </>
         ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

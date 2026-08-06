@@ -1,14 +1,44 @@
 import React from "react";
 import Link from "next/link";
+import Seo from "../components/Seo";
 import { getAllBlogs, sortBlogs } from "../util/blogs";
 import Header from "../components/Homepage/blog-header";
 
 import SectionHeading from "../components/Homepage/section-heading";
 import BlogsList from "../components/Blog/BlogsList";
 
+const siteJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Tom Butterwith",
+    url: "https://butterwith.space/about",
+    jobTitle: "Senior Director of Engineering",
+    sameAs: ["https://www.linkedin.com/in/tbutterwith/"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "butterwith.space",
+    url: "https://butterwith.space/",
+    description:
+      "Writing about software engineering, leadership, productivity, tools, and building products.",
+    publisher: {
+      "@type": "Person",
+      name: "Tom Butterwith",
+    },
+  },
+];
+
 function Homepage({ blogs, thoughts }) {
   return (
     <>
+      <Seo
+        title="Tom Butterwith | Engineering leadership, software, and tools"
+        description="Tom Butterwith is a Senior Director of Engineering writing about software engineering, leadership, productivity, tools, and building products."
+        canonicalPath="/"
+        jsonLd={siteJsonLd}
+      />
       <Header />
       <SectionHeading>Apps</SectionHeading>
       <ol>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Seo from "../components/Seo";
 import { tagToSlug } from "../util/tags";
 import { getAllBlogs, sortBlogs } from "../util/blogs";
 import BlogsList from "../components/Blog/BlogsList";
@@ -32,6 +33,11 @@ const BlogPage = ({ blogs }) => {
 
   return (
     <>
+      <Seo
+        title="Writing | Tom Butterwith - butterwith.space"
+        description="Articles and thoughts from Tom Butterwith on software engineering, engineering leadership, productivity, tools, and career development."
+        canonicalPath="/blog"
+      />
       <h1 className="font-serif text-3xl">Writing</h1>
       <div className="flex flex-row flex-wrap pt-4">
         <div className="basis-3/4">

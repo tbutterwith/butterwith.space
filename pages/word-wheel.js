@@ -1,11 +1,13 @@
-import Head from "next/head";
+import Seo from "../components/Seo";
 import WordWheel from "../components/WordWheel";
 
 const WordWheelPage = () => (
   <>
-    <Head>
-      <title>Word Wheel | Tom Butterwith - butterwith.space</title>
-    </Head>
+    <Seo
+      title="Word Wheel | Tom Butterwith - butterwith.space"
+      description="Play Word Wheel, a daily word puzzle from Tom Butterwith."
+      canonicalPath="/word-wheel"
+    />
     <WordWheel />
   </>
 );

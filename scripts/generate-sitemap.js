@@ -3,6 +3,7 @@ const path = require('path');
 const matter = require('gray-matter');
 
 const postsDirectory = path.join(process.cwd(), '_posts');
+const photosDirectory = path.join(process.cwd(), '_photos');
 const publicDirectory = path.join(process.cwd(), 'public');
 
 function getPosts() {
@@ -19,14 +20,33 @@ function getPosts() {
         date: data.date,
         title: data.title,
         description: data.description || '',
+        path: `/blog/${fileName.replace(/\.md$/, '')}`,
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
   return posts;
 }
 
-function generateSitemap(posts) {
+function getPhotos() {
+  const fileNames = fs.readdirSync(photosDirectory);
+  return fileNames
+    .filter(fileName => fileName.endsWith('.md'))
+    .map(fileName => {
+      const fullPath = path.join(photosDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data } = matter(fileContents);
+
+      return {
+        slug: fileName.replace(/\.md$/, ''),
+        date: data.date,
+        path: `/photos/${fileName.replace(/\.md$/, '')}`,
+      };
+    });
+}
+
+function generateSitemap(posts, photos) {
   const baseUrl = 'https://butterwith.space';
+  const contentPages = [...posts, ...photos].sort((a, b) => (a.date < b.date ? 1 : -1));
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -44,11 +64,11 @@ function generateSitemap(posts) {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  ${posts
-    .map(({ slug, date }) => {
+  ${contentPages
+    .map(({ path: contentPath, date }) => {
       return `
   <url>
-    <loc>${baseUrl}/blog/${slug}</loc>
+    <loc>${baseUrl}${contentPath}</loc>
     <lastmod>${date}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -104,7 +124,8 @@ function generateRss(posts) {
 
 try {
     const posts = getPosts();
-    generateSitemap(posts);
+    const photos = getPhotos();
+    generateSitemap(posts, photos);
     generateRss(posts);
 } catch (e) {
     console.error("Failed to generate sitemap/rss", e);

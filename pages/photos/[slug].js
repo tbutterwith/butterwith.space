@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head";
+import Seo from "../../components/Seo";
 
 const fs = require("fs");
 import { unified } from "unified";
@@ -12,9 +12,11 @@ import matter from "gray-matter";
 function BlogPostPage({ blog }) {
   return (
     <>
-      <Head>
-        <title>{blog.title} | Tom Butterwith - butterwith.space</title>
-      </Head>
+      <Seo
+        title={`${blog.title} | Tom Butterwith - butterwith.space`}
+        description={`Photos from ${blog.title} by Tom Butterwith.`}
+        canonicalPath={`/photos/${blog.slug.toLowerCase()}`}
+      />
       <div className="container flex justify-center">
         <div className="max-w-full font-serif leading-relaxed md:max-w-prose" id="photos-post">
           <section

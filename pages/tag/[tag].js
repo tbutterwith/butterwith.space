@@ -1,16 +1,18 @@
 import React from "react";
-import Head from "next/head";
+import Seo from "../../components/Seo";
 
-import { slugToTag } from "../../util/tags";
+import { tagToSlug } from "../../util/tags";
 import { getAllBlogs, sortBlogs, getAllTags } from "../../util/blogs";
 import BlogsList from "../../components/Blog/BlogsList";
 
 function TagsPage({ tag, blogs }) {
   return (
     <>
-      <Head>
-        <title>{tag} | Tom Butterwith - butterwith.space</title>
-      </Head>
+      <Seo
+        title={`${tag} articles | Tom Butterwith - butterwith.space`}
+        description={`Articles by Tom Butterwith tagged with ${tag}.`}
+        canonicalPath={`/tag/${tagToSlug(tag)}`}
+      />
       <h1 className="font-serif text-xl">Articles tagged with {tag}</h1>
       <BlogsList blogs={blogs} className="py-4" />
     </>
@@ -18,10 +20,16 @@ function TagsPage({ tag, blogs }) {
 }
 
 export async function getStaticProps(context) {
-  const tag = slugToTag(context.params.tag);
-  const blogs = sortBlogs(getAllBlogs()).filter((blog) =>
-    blog.tags.includes(tag)
-  );
+  const allBlogs = getAllBlogs();
+  const tag = allBlogs
+    .flatMap((blog) => blog.tags)
+    .find((value) => tagToSlug(value) === context.params.tag);
+
+  if (!tag) {
+    return { notFound: true };
+  }
+
+  const blogs = sortBlogs(allBlogs).filter((blog) => blog.tags.includes(tag));
 
   return { props: { tag, blogs } };
 }
