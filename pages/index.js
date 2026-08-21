@@ -57,8 +57,8 @@ function Homepage({ blogs, thoughts }) {
           <Link href="/word-wheel">Word Wheel</Link>
         </li>
         <li className="py-1">
-          <a href="https://github.com/tbutterwith/Tomodoro" target="_blank">
-            Tomodoro: a Pomodoro timer for mac
+          <a href="https://github.com/tbutterwith/gitty" target="_blank">
+            Gitty: a macOS menu bar app for tracking your GitHub pull requests
           </a>
         </li>
         <li className="py-1">
